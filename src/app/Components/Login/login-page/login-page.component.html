@@ -1,0 +1,35 @@
+<div class="container card mt-3 shadow p-4 mb-5 bg-white rounded">
+  <h2>Login</h2>
+  <hr />
+  <form>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>User Name</mat-label>
+      <input matInput formControlName="username" />
+      <mat-icon matSuffix>perm_identity</mat-icon>
+      <!-- <mat-error *ngIf="loginForm.get('username').hasError('required')"
+        >User name is required.</mat-error
+      > -->
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        formControlName="pasword"
+        type="password"
+        #passwod
+        [type]="hide ? 'password' : 'text'"
+      />
+      <mat-icon matSuffix (click)="hide = !hide">{{
+        hide ? "visibility_off" : "visibility"
+      }}</mat-icon>
+      <!-- <mat-error *ngIf="loginForm.get('password').hasError('required')"
+        >Password is required.</mat-error
+      > -->
+      <mat-hint align="end">{{ passwod.value.length }}/20</mat-hint>
+    </mat-form-field>
+
+    <button mat-flat-button color="primary">Sign In</button>
+    <p (click)="rooter()">Forgot Password?</p>
+  </form>
+</div>

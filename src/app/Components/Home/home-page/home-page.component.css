@@ -1,0 +1,11 @@
+.segment {
+  margin: auto;
+  width: 60%;
+  color: white;
+}
+table {
+  background-color: darkgray;
+}
+h4 {
+  text-align: center;
+}

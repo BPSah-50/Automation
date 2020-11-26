@@ -1,0 +1,43 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 25%;
+  padding: 20px;
+  margin: auto;
+  box-sizing: border-box;
+  border: 1px solid green;
+  margin-top: 30px;
+  background-color: antiquewhite;
+}
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: auto;
+}
+mat-form-field {
+  width: 100%;
+}
+button {
+  width: 100%;
+}
+p {
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 525px) {
+  .container {
+    width: 65%;
+  }
+}
